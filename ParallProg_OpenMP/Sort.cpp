@@ -11,7 +11,6 @@ bool isSorted(double* a) {
 			return false;
 	return true;
 }
-
 void bubbleSort(double* a) {
 	double tmp;
 	int i, j;
@@ -24,22 +23,6 @@ void bubbleSort(double* a) {
 				a[j + 1] = tmp;
 			}
 }
-
-
-void bubbleSortP(double* a) {
-	double tmp;
-	int i, j;
-	for (i = 0; i < num; i++)
-#pragma omp parallel for shared(a)
-		for (j = 0; j < num - 1; j++)
-			if (a[j] > a[j + 1])
-			{
-				tmp = a[j];
-				a[j] = a[j + 1];
-				a[j + 1] = tmp;
-			}
-}
-
 void chetNechetSort(double* a) {
 	double tmp;
 	int i, j;
@@ -53,7 +36,6 @@ void chetNechetSort(double* a) {
 		}
 	}
 }
-
 void chetNechetSortP(double* array) {
 	double tmp;
 	int i, j;
@@ -68,7 +50,6 @@ void chetNechetSortP(double* array) {
 		}
 	}
 }
-
 void shellSort(double* a)
 {
 	double tmp;
@@ -82,7 +63,6 @@ void shellSort(double* a)
 				a[j + 1] = tmp;
 			}
 }
-
 void shellSortP(double* a)
 {
 	double tmp;
@@ -128,11 +108,7 @@ int main()
 	cout << "Время пузырька: " << t2 - t1 << endl;
 	cout.flush();
 	cout << endl;
-	t1 = omp_get_wtime();
-	bubbleSortP(array2);
-	t2 = omp_get_wtime();
-	cout << "Время параллельного пузырька: " << t2 - t1 << endl;
-	cout.flush();
+
 
 	t1 = omp_get_wtime();
 	chetNechetSort(array3);
