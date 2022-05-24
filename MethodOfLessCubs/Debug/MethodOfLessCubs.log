@@ -1,0 +1,12 @@
+﻿  MethodOfLessCubs.cpp
+C:\Users\Sultan\Documents\GitHub\ParallProg_OpenMP\MethodOfLessCubs\MethodOfLessCubs.cpp(145,78): warning C4244: аргумент: преобразование "_Ty1" в "int", возможна потеря данных
+          with
+          [
+              _Ty1=long double
+          ]
+C:\Users\Sultan\Documents\GitHub\ParallProg_OpenMP\MethodOfLessCubs\MethodOfLessCubs.cpp(219,78): warning C4244: аргумент: преобразование "_Ty1" в "int", возможна потеря данных
+          with
+          [
+              _Ty1=long double
+          ]
+  MethodOfLessCubs.vcxproj -> C:\Users\Sultan\Documents\GitHub\ParallProg_OpenMP\Debug\MethodOfLessCubs.exe

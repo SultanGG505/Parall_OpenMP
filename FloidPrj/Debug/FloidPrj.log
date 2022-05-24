@@ -1,0 +1,4 @@
+﻿  FloidPrj.cpp
+C:\Users\Sultan\Documents\GitHub\ParallProg_OpenMP\FloidPrj\FloidPrj.cpp(41,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+C:\Users\Sultan\Documents\GitHub\ParallProg_OpenMP\FloidPrj\FloidPrj.cpp(48,22): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  FloidPrj.vcxproj -> C:\Users\Sultan\Documents\GitHub\ParallProg_OpenMP\Debug\FloidPrj.exe
